@@ -36,6 +36,8 @@ Access the application by opening a web browser and navigating to:
 1. Create a new room or join an existing one using a unique UUID.  
 2. Share the UUID with collaborators to invite them to the room.  
 3. Start coding in real-time with your team!  
+   ![image](https://github.com/user-attachments/assets/73b37847-04aa-4605-90da-738a566ff3a7)
+
 
 ## Technologies Used
 
