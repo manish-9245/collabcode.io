@@ -6,14 +6,15 @@
     justify-content: center;
     color: #fff;
     height: 100vh;
+    padding: 20px;
 }
 
 .formWrapper {
     background: #282a36;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
-    max-width: 70%;
+    width: 100%;
+    max-width: 400px;
 }
 
 .inputGroup {
@@ -30,8 +31,9 @@
     font-size: 40px;
     text-align: center;
     background-color: #ffffff;
-
     -webkit-background-clip: text;
+    background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Source Code Pro';
     font-weight: bold;
@@ -69,7 +71,7 @@
 
 .joinBtn:hover,
 .leaveBtn:hover {
-    background: rgb(15, 174, 174);;
+    background: rgb(15, 174, 174);
 }
 
 .createInfo {
@@ -84,7 +86,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.createNewBtn:hover{
+.createNewBtn:hover {
     color: rgb(15, 174, 174);
     border-color: rgb(15, 174, 174);
 }
@@ -101,6 +103,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .asideInner {
     flex: 1;
 }
@@ -118,12 +121,13 @@
     flex-direction: column;
     font-weight: bold;
 }
+
 .userName {
     margin-top: 10px;
 }
 
 .logo {
-    background: -webkit-linear-gradient(aqua,rgb(47, 189, 189));
+    background: -webkit-linear-gradient(aqua, rgb(47, 189, 189));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 10px;
@@ -134,14 +138,88 @@
     padding-bottom: 10px;
 }
 
-
 .leaveBtn {
     width: 100%;
     margin-top: 20px;
 }
+
 .CodeMirror {
     min-height: calc(100vh - 20px);
     font-size: 20px;
     line-height: 1.6;
     padding-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mainWrap {
+        grid-template-columns: 1fr;
+    }
+
+    .aside {
+        padding: 10px;
+    }
+
+    .formWrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .homePageLogo {
+        font-size: 30px;
+        height: 60px;
+    }
+
+    .inputBox {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .joinBtn,
+    .leaveBtn {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .clientsList {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 8px;
+    }
+
+    .CodeMirror {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside {
+        width: 100%;
+        order: 2;
+    }
+
+    .editorWrap {
+        width: 100%;
+        order: 1;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .clientsList {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
