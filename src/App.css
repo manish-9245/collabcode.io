@@ -80,15 +80,19 @@
 }
 
 .createNewBtn {
-    color: aqua;
+    background: none;
+    border: none;
+    color: #ffffff;
     text-decoration: none;
-    border-bottom: 1px solid aqua;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
     transition: all 0.3s ease-in-out;
 }
 
 .createNewBtn:hover {
-    color: rgb(15, 174, 174);
-    border-color: rgb(15, 174, 174);
+    text-decoration: underline;
+    color: #a445b2;
 }
 
 .mainWrap {

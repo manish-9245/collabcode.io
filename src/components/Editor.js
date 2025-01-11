@@ -51,7 +51,24 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
         };
     }, [socketRef.current]);
 
-    return <textarea id="realtimeEditor"></textarea>;
+    useEffect(() => {
+        const editor = document.getElementById('realtimeEditor');
+        editor.addEventListener('input', (event) => {
+            onCodeChange(event.target.value);
+        });
+
+        return () => {
+            editor.removeEventListener('input', (event) => {
+                onCodeChange(event.target.value);
+            });
+        };
+    }, [onCodeChange]);
+
+    return (
+        <div className="h-full">
+            <textarea id="realtimeEditor" className="w-full h-full resize-none"></textarea>
+        </div>
+    );
 };
 
 export default Editor;
