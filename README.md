@@ -1,6 +1,13 @@
 # Collab Code
 
 Collab Code is a real-time online code editor that allows multiple users to collaborate on coding projects simultaneously. Users can create rooms with unique identifiers and invite others to join for seamless collaborative coding sessions.
+### Screenshots
+
+![alt text](<Screenshot 2025-01-12 at 1.31.20 AM.png>)
+
+![alt text](<Screenshot 2025-01-12 at 1.33.28 AM.png>)
+
+
 
 ## Features
 
